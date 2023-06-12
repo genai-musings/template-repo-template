@@ -3,6 +3,7 @@
         {"pattern": ".spelling"},
         {"pattern": "/workflows/"},
         {"pattern": "/opensource.org/"},
+        {"pattern": "/orgname/reponame/"},
         {"pattern": "/tom-halpin/"},
         {"pattern": "/actions?"},
         {"pattern": "assets/"},

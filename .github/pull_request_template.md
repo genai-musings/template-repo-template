@@ -18,7 +18,7 @@ _Put an `x` in the boxes that apply_
 
 _Put an `x` in the boxes that apply you can view the checklist as a heads up as to what we are going to look for before merging your code._
 
-- [ ] I have read the CONTRIBUTING.md guidelines for this repo.
+- [ ] I have read the CONTRIBUTING.md guidelines for this repository.
 - [ ] I have included any and all necessary documentation where appropriate.
 - [ ] I will fix any problems reported with this PR by the GitHub Actions on this repository.
 

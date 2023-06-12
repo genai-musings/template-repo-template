@@ -4,7 +4,7 @@ Readme file.
 
 ## TODO
 
-- Update [GitHub issue](https://github.com/<orgname>/<reponame>/issues/new) URL in CONTRIBUTING.md
+- Update [GitHub issue](https://github.com/orgname/reponame/issues/new) URL in CONTRIBUTING.md
 
 - Add any keys / secret files to .gitignore
 
