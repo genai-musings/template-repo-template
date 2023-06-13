@@ -1,7 +1,7 @@
 # Template, Repository Template - README.md
 
 
-This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects. 
+This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
 
 It includes bug and feature issue templates, a pull request (PR) template, spelling check, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing markdown files.
 
