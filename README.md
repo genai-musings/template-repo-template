@@ -3,7 +3,7 @@
 
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
 
-It includes bug and feature issue templates, a pull request (PR) template, spelling check, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing markdown files.
+It includes bug and feature issue templates, a pull request (PR) template, spelling check, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing Markdown files.
 
 ## Contents Include
 
@@ -17,9 +17,9 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 
 - ```.github/workflows/linter.yml```: GitHub Actions workflow for YML & Markdown validation.
 
-- ```.github/workflows/md-links.yml```: GitHub Actions workflow for markdown link validation.
+- ```.github/workflows/md-links.yml```: GitHub Actions workflow for Markdown link validation.
 
-- ```.github/workflows/spellingcheck.yml```: GitHub Actions workflow for spell checking markdown.
+- ```.github/workflows/spellingcheck.yml```: GitHub Actions workflow for spell checking Markdown.
 
 - ```.github/workflows/stale.yml```: GitHub Actions workflow for managing stale issues and pull requests.
 
@@ -50,4 +50,3 @@ The following changes need to be made:
 ## Licensed to Code
 
 You are now licensed to code. Happy collaborations!
-
