@@ -7,8 +7,12 @@ linters
 md
 MPL
 orgname
+PRL
 reponame
 Readme
 README
+spellingcheck
 TODO
 yamllint
+YML
+

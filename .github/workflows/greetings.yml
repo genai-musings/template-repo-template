@@ -9,6 +9,9 @@ on: [pull_request, issues]
 jobs:
   greeting:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - uses: actions/first-interaction@v1
         with:
@@ -19,3 +22,4 @@ jobs:
           pr-message: >
             Thank you for submitting your first Pull Request to this repository.
             We will review it and get back to you shortly.
+            name: Greetings
