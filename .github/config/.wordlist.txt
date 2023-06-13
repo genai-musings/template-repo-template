@@ -1,6 +1,8 @@
 bugfixes
+changelog
 Changelog
 CHANGELOG
+codeowners
 CODEOWNERS
 gitignore
 linters
@@ -12,6 +14,7 @@ reponame
 Readme
 README
 spellingcheck
+superlinter
 TODO
 yamllint
 YML
