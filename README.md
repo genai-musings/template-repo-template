@@ -1,4 +1,4 @@
-# Template, Repository Template - README.md
+# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
 
