@@ -5,6 +5,7 @@ CHANGELOG
 codeowners
 CODEOWNERS
 gitignore
+Linter
 linters
 md
 MPL
