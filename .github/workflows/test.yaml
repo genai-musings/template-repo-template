@@ -28,5 +28,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest coverage
 
-      - name: Run tests
+      - name: Run unit tests
         run: pytest
