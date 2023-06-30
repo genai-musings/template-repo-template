@@ -38,7 +38,7 @@ jobs:
         run: |
           COVERAGE_THRESHOLD=70
           COVERAGE_PERCENTAGE=$(coverage report | grep TOTAL | awk '{print $NF}')
-          if (( $(awk 'BEGIN {print ("'"$COVERAGE_PERCENTAGE"'" < "'"$COVERAGE_THRESHOLD"'")}') )); then
+          if [ "$COVERAGE_PERCENTAGE" -lt "$COVERAGE_THRESHOLD" ]; then
             echo "Coverage is below the threshold ($COVERAGE_PERCENTAGE% < $COVERAGE_THRESHOLD%)"
             exit 1
           fi
