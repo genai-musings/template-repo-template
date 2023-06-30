@@ -1,4 +1,4 @@
-# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions)
+# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions) [Tests-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python) [Code-Coverage-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
 
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
 
@@ -12,6 +12,8 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
 
+- ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
+
 - ```.github/workflows/greetings.yml```: GitHub Actions workflow for automated Greeting messages.
 
 - ```.github/workflows/linter.yml```: GitHub Actions workflow for YML & Markdown validation.
@@ -19,6 +21,8 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 - ```.github/workflows/md-links.yml```: GitHub Actions workflow for Markdown link validation.
 
 - ```.github/workflows/spellingcheck.yml```: GitHub Actions workflow for spell checking Markdown.
+
+- ```.github/workflows/test.yaml```: GitHub Actions workflow for Python unit tests.
 
 - ```.github/workflows/stale.yml```: GitHub Actions workflow for managing stale issues and pull requests.
 
@@ -51,6 +55,8 @@ The following changes need to be made:
 - Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates.
 
 - Review and if necessary update ```dependabot.yml``` to customize Dependabot alerts.
+
+- Replace code in ```main.py``` with your code, update tests and associated GitHub action workflows accordingly.
 
 - Review and update ```README.md```.
 
