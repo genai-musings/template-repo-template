@@ -1,4 +1,4 @@
-# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions)
 
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
 
@@ -24,6 +24,8 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 
 - ```.github/CODEOWNERS```: File to specify code owners for the repository.
 
+- ```.github/dependabot.yml```: Configuration options controlling how Dependabot maintains the repository.
+
 - ```CHANGELOG.md```: File to track changes made to the repository.
 
 - ```CONTRIBUTING.md```: Guidelines for contributing to the project.
@@ -42,7 +44,15 @@ The following changes need to be made:
 
 - Add any keys / secret files to ```.gitignore```.
 
+- Review and update ```CHANGELOG.md```.
+
 - Review and update ```CODEOWNERS```.
+
+- Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates.
+
+- Review and if necessary update ```dependabot.yml``` to customize Dependabot alerts.
+
+- Review and update ```README.md```.
 
 - Review and enable required linters in the ```.github/workflows/linter.yml``` GitHub action.
 
