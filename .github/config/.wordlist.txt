@@ -4,6 +4,7 @@ Changelog
 CHANGELOG
 codeowners
 CODEOWNERS
+Dependabot
 gitignore
 Linter
 linters
