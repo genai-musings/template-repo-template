@@ -6,6 +6,7 @@ codeowners
 CODEOWNERS
 Dependabot
 gitignore
+HelloWorld
 Linter
 linters
 md
@@ -13,6 +14,7 @@ MPL
 orgname
 pre
 PRL
+Python
 reponame
 Readme
 README
