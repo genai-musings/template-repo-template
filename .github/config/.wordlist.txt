@@ -7,6 +7,7 @@ CODEOWNERS
 Dependabot
 gitignore
 HelloWorld
+linter
 Linter
 linters
 md
