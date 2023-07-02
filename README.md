@@ -1,6 +1,6 @@
-# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions) [![Tests-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python) [![Code-Coverage-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
+# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions) [![Tests-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python) [![Code-Coverage-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python) [![Bandit-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/bandit.yaml/badge.svg)](https://github.com/tom-halpin/template-repo-template/actions/new?category=security) [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
-This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
+This is a template repository for creating new repositories with pre-configured settings and files commonly used in my Python projects.
 
 It includes bug and feature issue templates, a pull request (PR) template, spelling check, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing Markdown files.
 
@@ -11,6 +11,8 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 - ```.github/ISSUE_TEMPLATE/feature.md```: Template for suggesting new features.
 
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
+
+- ```.github/workflows/bandit.yaml```: GitHub Actions workflow for security linter designed to find common security issues in Python code.
 
 - ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
 
