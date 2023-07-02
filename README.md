@@ -67,6 +67,8 @@ The following changes need to be made:
 
 - Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates.
 
+- Enable [Secret Scanning with Push Protection](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to receive alerts on GitHub for detected secrets, keys, or other tokens, and to block commits which contain supported secrets.
+
 - Review and if necessary update ```dependabot.yml``` to customize Dependabot alerts.
 
 - Replace code in ```main.py``` with your code, update tests and associated GitHub action workflows accordingly.
