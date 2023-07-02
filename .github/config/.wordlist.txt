@@ -2,6 +2,7 @@ bugfixes
 changelog
 Changelog
 CHANGELOG
+CodeQL
 codeowners
 CODEOWNERS
 Dependabot
@@ -12,6 +13,7 @@ linters
 md
 MPL
 orgname
+OSSF
 pre
 PRL
 Python

@@ -1,8 +1,16 @@
-# Template, Repository Template - README.md [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) [![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check) [![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions) [![Tests-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python) [![Code-Coverage-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
+# Template, Repository Template - README.md
 
-This is a template repository for creating new repositories with pre-configured settings and files commonly used in my projects.
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![GitHub Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![CodeQL](https://github.com/tom-halpin/template-repo-template/workflows/CodeQL/badge.svg?branch=main)
+[![GitHub Action Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check)
+[![Spellcheck-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions)
+[![Tests-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python)
+[![Code-Coverage-GitHub-Action](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
 
-It includes bug and feature issue templates, a pull request (PR) template, spelling check, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing Markdown files.
+This is a hello world template repository for creating new python repositories with pre-configured settings and files commonly used in my projects.
+
+It includes bug and feature issue templates, a pull request (PR) template, CodeQL action, dependabot action, markdown linking & spelling check actions, superlinter (YML & Markdown validation enabled) action, stale issues & PR GitHub actions, and codeowners, changelog, and contributing Markdown files.
 
 ## Contents Include
 
@@ -12,7 +20,12 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
 
+- ```.github/codeql.yml```: GitHub Actions workflow for CodeQL analysis.
+
+
 - ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
+
+- ```.github/dependabot.yml```: GitHub Actions workflow controlling how Dependabot maintains the repository.
 
 - ```.github/workflows/greetings.yml```: GitHub Actions workflow for automated Greeting messages.
 
@@ -27,8 +40,6 @@ It includes bug and feature issue templates, a pull request (PR) template, spell
 - ```.github/workflows/stale.yml```: GitHub Actions workflow for managing stale issues and pull requests.
 
 - ```.github/CODEOWNERS```: File to specify code owners for the repository.
-
-- ```.github/dependabot.yml```: Configuration options controlling how Dependabot maintains the repository.
 
 - ```CHANGELOG.md```: File to track changes made to the repository.
 
@@ -51,6 +62,8 @@ The following changes need to be made:
 - Review and update ```CHANGELOG.md```.
 
 - Review and update ```CODEOWNERS```.
+
+- Enable [CodeQL analysis](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to identify vulnerabilities and errors with [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql).
 
 - Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates.
 
