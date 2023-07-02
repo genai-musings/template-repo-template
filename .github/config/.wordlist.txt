@@ -5,6 +5,7 @@ CHANGELOG
 CodeQL
 codeowners
 CODEOWNERS
+dependabot
 Dependabot
 gitignore
 HelloWorld
