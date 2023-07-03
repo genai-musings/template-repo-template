@@ -2,8 +2,10 @@ bugfixes
 changelog
 Changelog
 CHANGELOG
+CodeQL
 codeowners
 CODEOWNERS
+dependabot
 Dependabot
 gitignore
 HelloWorld
@@ -12,6 +14,7 @@ linters
 md
 MPL
 orgname
+OSSF
 pre
 PRL
 Python
