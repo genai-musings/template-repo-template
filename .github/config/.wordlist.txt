@@ -25,6 +25,7 @@ README
 spellingcheck
 superlinter
 TODO
+URLs
 yamllint
 YML
 
