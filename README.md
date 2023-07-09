@@ -23,13 +23,7 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
 
-- ```.github/workflows/bandit.yaml```: GitHub Actions workflow for security linter designed to find common security issues in Python code.
-
-- ```.github/codeql.yml```: GitHub Actions workflow for CodeQL analysis.
-
 - ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
-
-- ```.github/dependabot.yml```: GitHub Actions workflow controlling how Dependabot maintains the repository.
 
 - ```.github/workflows/greetings.yml```: GitHub Actions workflow for automated Greeting messages.
 
@@ -67,9 +61,11 @@ The following changes need to be made:
 
 - Review and update ```CODEOWNERS```.
 
-- Enable [CodeQL analysis](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to identify vulnerabilities and errors with [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql).
+- Enable [CodeQL analysis](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to identify vulnerabilities and errors with [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql), when enabling select the option to generate - ```.github/codeql.yml```: the GitHub Actions workflow for CodeQL analysis.
 
-- Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates.
+- Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates when enabling it select the option to generate - ```.github/dependabot.yml```: the GitHub Actions workflow controlling how Dependabot maintains the repository.
+
+- Enable [Bandit](https://github.com/genai-musings/chatting-with-ChatGPT/actions/new?category=security) when enabling it select the option to generate - ```.github/bandit.yml```: the GitHub Actions workflow designed to find common security issues in Python code.
 
 - Enable [Secret Scanning with Push Protection](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to receive alerts on GitHub for detected secrets, keys, or other tokens, and to block commits which contain supported secrets.
 
