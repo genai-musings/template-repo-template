@@ -17,6 +17,7 @@ MPL
 orgname
 OSSF
 pre
+PR
 PRL
 Python
 reponame
