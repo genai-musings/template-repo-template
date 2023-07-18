@@ -9,6 +9,8 @@ dependabot
 Dependabot
 Dockerfile
 Dockerized
+DOCKERHUB_USERNAME
+DOCKERHUB_PASSWORD
 gitignore
 HelloWorld
 linter

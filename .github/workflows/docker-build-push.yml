@@ -1,0 +1,31 @@
+name: Build and Push Docker Image
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+    - name: Extract version from changelog
+      id: extract-version
+      run: |
+        VERSION=$(grep -oP "^## \[\K([\d.]+)" CHANGELOG.md | head -n 1)
+        echo "::set-output name=version::$VERSION"
+
+    - name: Build and Push Docker image
+      run: |
+        IMAGE_TAG=${{ steps.extract-version.outputs.version }}
+        docker build -t <dockerhub-username>/<image-name>:${{ IMAGE_TAG }} .
+        docker push <dockerhub-username>/<image-name>:${{ IMAGE_TAG }}

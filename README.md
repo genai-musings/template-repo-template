@@ -10,6 +10,7 @@ This is a template repository for creating new repositories with pre-configured 
 [![Spell-Checker](https://github.com/tom-halpin/template-repo-template/actions/workflows/spellcheck.yaml/badge.svg)](https://github.com/rojopolis/spellcheck-github-actions)
 [![Unit-Tests](https://github.com/tom-halpin/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python)
 [![Code-Coverage](https://github.com/tom-halpin/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
+[![Docker-Build-Push](https://github.com/tom-halpin/template-repo-template/actions/workflows/docker-build-push.yml/badge.svg)](https://hub.docker.com/)
 
 This is a hello world template repository for creating new python repositories with pre-configured settings and files commonly used in my projects.
 
@@ -24,6 +25,8 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
 
 - ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
+
+- ```.github/workflows/docker-build-push.yml```: GitHub Actions workflow to build and push a Docker image containing the application code to Docker Hub when code is pushed to the main branch.
 
 - ```.github/workflows/greetings.yml```: GitHub Actions workflow for automated Greeting messages.
 
@@ -112,6 +115,8 @@ The following changes need to be made:
 - Review and enable required linters in the ```.github/workflows/linter.yml``` GitHub action.
 
 - Review and update the project dependencies in ```requirements.txt```.
+
+- Review and update the Docker Hub details in ```.github/workflows/docker-build-push.yml```. You need to replace <dockerhub-username>, <image-name>, and <tag> with your own values.**Note:** The username and password for Docker Hub should be stored as secrets in your GitHub repository. To set up the secrets in your GitHub repository, go to your repository page, navigate to the "Settings" tab, and then select "Secrets" from the left menu. Add a secret named DOCKERHUB_USERNAME with your Docker Hub username, and another secret named DOCKERHUB_PASSWORD with your Docker Hub password.
 
 ## Licensed to Code
 
