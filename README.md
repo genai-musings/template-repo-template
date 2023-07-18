@@ -63,11 +63,11 @@ python main.py
 pytest
 ```
 
-## To build and run Dockerfile
+## To build and run an instance of a Docker image.
 
 ### Build
 
-Build image.
+Build the Docker image.
 
 ```shell
 docker build -t template-repo-template .
@@ -75,7 +75,7 @@ docker build -t template-repo-template .
 
 ### Run
 
-Start container.
+Run the Docker image as a container.
 
 ```shell
 docker run -it template-repo-template
