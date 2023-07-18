@@ -51,8 +51,6 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 ## To run program
 
-Your Bing key is passed to program via an environment variable
-
 ```shell
 python main.py
 ```
