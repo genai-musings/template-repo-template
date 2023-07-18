@@ -47,6 +47,40 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 - ```README.md```: This file.
 
+- ```requirements.txt```: File used to specify the dependencies or external packages required by the project.
+
+## To run program
+
+Your Bing key is passed to program via an environment variable
+
+```shell
+python main.py
+```
+
+## To run unit tests
+
+```shell
+pytest
+```
+
+## To build and run Dockerfile
+
+### Build
+
+Build image.
+
+```shell
+docker build -t template-repo-template .
+```
+
+### Run
+
+Start container.
+
+```shell
+docker run -it template-repo-template
+```
+
 ## TODO
 
 Please review the contents of this repository and customize them to fit your project's specific requirements.
@@ -63,7 +97,7 @@ The following changes need to be made:
 
 - Enable [CodeQL analysis](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) to identify vulnerabilities and errors with [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql), when enabling select the option to generate - ```.github/codeql.yml```: the GitHub Actions workflow for CodeQL analysis.
 
-- Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates when enabling it select the option to generate - ```.github/dependabot.yml```: the configuration file controlling how Dependabot maintains the repository.
+- Enable [Dependabot](https://github.com/tom-halpin/template-repo-template/settings/security_analysis) alerts, security updates and version updates when enabling it select the option to generate - ```.github/dependabot.yml```: the configuration file controlling how Dependabot maintains the repository. **Note:** Remember to set the ```package-ecosystem`` to pip.
 
 - Enable [Bandit](https://github.com/genai-musings/chatting-with-ChatGPT/actions/new?category=security) when enabling it select the option to generate - ```.github/bandit.yml```: the GitHub Actions workflow designed to find common security issues in Python code.
 
@@ -78,6 +112,8 @@ The following changes need to be made:
 - Review and update ```README.md```. Remove redundant instructions such as this and update Badges displayed including their URLs.
 
 - Review and enable required linters in the ```.github/workflows/linter.yml``` GitHub action.
+
+- Review and update the project dependencies in ```requirements.txt```.
 
 ## Licensed to Code
 

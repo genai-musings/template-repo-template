@@ -8,5 +8,8 @@ def main():
     result = hello.get_string()
     print(result)
 
+    # Prompt for and wait for a keypress
+    input("Press any key to continue...")
+
 if __name__ == "__main__":
     main()
