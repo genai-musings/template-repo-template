@@ -1,4 +1,5 @@
 name: Build and Push Docker Image
+
 on:
   push:
     branches:
@@ -22,11 +23,11 @@ jobs:
       id: extract-version
       run: |
         VERSION=$(grep -oP "^## \[\K([\d.]+)" CHANGELOG.md | head -n 1)
-        echo "::set-output name=version::$VERSION"
 
     - name: Build and Push Docker image
       run: |
-        IMAGE_TAG=${{ steps.extract-version.outputs.version }}
+        IMAGE_TAG=${{ env.VERSION }}
         docker build -t <dockerhub-username>/<image-name>:${IMAGE_TAG} .
         docker push <dockerhub-username>/<image-name>:${IMAGE_TAG}
+
 
