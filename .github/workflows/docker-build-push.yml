@@ -19,15 +19,8 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-    - name: Extract version from changelog
-      id: extract-version
-      run: |
-        VERSION=$(grep -oP "^## \[\K([\d.]+)" CHANGELOG.md | head -n 1)
-
     - name: Build and Push Docker image
       run: |
-        IMAGE_TAG=${{ env.VERSION }}
+        IMAGE_TAG=$(grep -oP "^## \[\K([\d.]+)" CHANGELOG.md | head -n 1)
         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/template-repo-template:${IMAGE_TAG} .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/template-repo-template:${IMAGE_TAG}
-        env:
-          VERSION: ${{ env.VERSION }}
