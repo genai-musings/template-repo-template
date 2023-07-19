@@ -29,3 +29,5 @@ jobs:
         IMAGE_TAG=${{ env.VERSION }}
         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/template-repo-template:${IMAGE_TAG} .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/template-repo-template:${IMAGE_TAG}
+        env:
+          VERSION: ${{ env.VERSION }}
