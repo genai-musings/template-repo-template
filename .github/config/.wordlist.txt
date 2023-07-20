@@ -33,6 +33,7 @@ spellingcheck
 superlinter
 TODO
 URLs
+username
 yamllint
 YML
 

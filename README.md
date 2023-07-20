@@ -3,7 +3,7 @@
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my Python projects.
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-<!--[![Bandit](https://github.com/tom-halpin/template-repo-template/actions/workflows/bandit.yml/badge.svg)](https://github.com/tom-halpin/template-repo-template/actions/new?category=security)-->
+[![Bandit](https://github.com/tom-halpin/template-repo-template/actions/workflows/bandit.yml/badge.svg)](https://github.com/tom-halpin/template-repo-template/actions/new?category=security)
 [![Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![CodeQL](https://github.com/tom-halpin/template-repo-template/workflows/CodeQL/badge.svg?branch=main)
 [![Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check)
@@ -64,7 +64,7 @@ python main.py
 pytest
 ```
 
-## To build and run an instance of a Docker image.
+## To build and run an instance of a Docker image locally.
 
 ### Build
 
@@ -81,6 +81,24 @@ Run the Docker image as a container.
 ```shell
 docker run -it template-repo-template
 ```
+
+## To pull and run an instance of the Docker image from Docker Hub
+
+### Pull
+
+```shell
+docker pull <dockerhub-username>/template-repo-template:<tag>
+```
+
+Replace <dockerhub-username> with your Docker Hub username and <tag> with the specific tag of the Docker image you want to pull.
+
+### Run
+
+```shell
+docker run -it <dockerhub-username>/template-repo-template:<tag>
+```
+
+Replace <dockerhub-username> with your Docker Hub username and <tag> with the specific tag of the Docker image you want to pull.
 
 ## TODO
 
@@ -110,7 +128,7 @@ The following changes need to be made:
 
 - Replace code in ```main.py``` with your code, update tests and associated GitHub action workflows accordingly.
 
-- Review and update ```README.md```. Remove redundant instructions such as this and update Badges displayed including their URLs.
+- Review and update ```README.md```. Remove redundant instructions such as this and update the Badges displayed including their URLs depending on which of the associated workflows you have enabled.
 
 - Review and enable required linters in the ```.github/workflows/linter.yml``` GitHub action.
 
