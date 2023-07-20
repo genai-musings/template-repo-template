@@ -3,7 +3,7 @@
 This is a template repository for creating new repositories with pre-configured settings and files commonly used in my Python projects.
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![Bandit](https://github.com/tom-halpin/template-repo-template/actions/workflows/bandit.yml/badge.svg)](https://github.com/tom-halpin/template-repo-template/actions/new?category=security)
+<!--[![Bandit](https://github.com/tom-halpin/template-repo-template/actions/workflows/bandit.yml/badge.svg)](https://github.com/tom-halpin/template-repo-template/actions/new?category=security)-->
 [![Super-Linter](https://github.com/tom-halpin/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![CodeQL](https://github.com/tom-halpin/template-repo-template/workflows/CodeQL/badge.svg?branch=main)
 [![Markdown Links Check](https://github.com/tom-halpin/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check)
