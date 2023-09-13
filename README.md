@@ -11,6 +11,7 @@ This is a template repository for creating new repositories with pre-configured 
 [![Unit-Tests](https://github.com/genai-musings/template-repo-template/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python)
 [![Code-Coverage](https://github.com/genai-musings/template-repo-template/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
 [![Docker-Build-Push](https://github.com/genai-musings/template-repo-template/actions/workflows/docker-build-push.yml/badge.svg)](https://hub.docker.com/)
+[![Docker-Push-README](https://github.com/genai-musings/template-repo-template/actions/workflows/docker-push-readme.yml/badge.svg)](https://hub.docker.com/)
 
 This is a hello world template repository for creating new python repositories with pre-configured settings and files commonly used in my projects.
 
@@ -24,9 +25,13 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 - ```.github/PULL_REQUEST_TEMPLATE.md```: Template for creating pull requests.
 
+- ```.github/workflows/Dockerfile```: Dockerfile to create for HelloWorld Python application.
+
 - ```.github/workflows/coverage.yaml```: GitHub Actions workflow for Python unit test code coverage.
 
 - ```.github/workflows/docker-build-push.yml```: GitHub Actions workflow to build and push a Docker image containing the application code to Docker Hub when code is pushed to the main branch.
+
+- ```.github/workflows/docker-push-readme.yml```: GitHub Actions workflow to push contents of README.md to overview section of image page on Docker Hub when code is pushed to the main branch.
 
 - ```.github/workflows/greetings.yml```: GitHub Actions workflow for automated Greeting messages.
 
@@ -34,11 +39,11 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 - ```.github/workflows/md-links.yml```: GitHub Actions workflow for Markdown link validation.
 
-- ```.github/workflows/spellingcheck.yml```: GitHub Actions workflow for spell checking Markdown.
-
-- ```.github/workflows/test.yaml```: GitHub Actions workflow for Python unit tests.
+- ```.github/workflows/spellcheck.yml```: GitHub Actions workflow for spell checking Markdown.
 
 - ```.github/workflows/stale.yml```: GitHub Actions workflow for managing stale issues and pull requests.
+
+- ```.github/workflows/test.yaml```: GitHub Actions workflow for Python unit tests.
 
 - ```.github/CODEOWNERS```: File to specify code owners for the repository.
 
@@ -136,7 +141,13 @@ The following changes need to be made:
 
 - Review and update the project dependencies in ```requirements.txt```.
 
-- Review and update the Docker Hub details in ```.github/workflows/docker-build-push.yml```. You need to replace <dockerhub-username>, <image-name>, and <tag> with your own values.**Note:** The username and password for Docker Hub should be stored as secrets in your GitHub repository. To set up the secrets in your GitHub repository, go to your repository page, navigate to the "Settings" tab, and then select "Secrets" from the left menu. Add a secret named DOCKERHUB_USERNAME with your Docker Hub username, and another secret named DOCKERHUB_PASSWORD with your Docker Hub password.
+- Review and update the Docker Hub details in ```.github/workflows/docker-build-push.yml```. You need to replace <dockerhub-username>, <image-name>, and <tag> with your own values.
+
+- Review and update the maintainer and description entries in the ```Dockerfile```.
+
+- Review and update the Docker Hub details in ```.github/workflows/docker-push-readme.yml```. You need to replace <dockerhub-username> and <image-name>. You also need to update the ```short_description``` for the image.
+
+**Note:** The username and password for Docker Hub should be stored as secrets in your GitHub repository. To set up the secrets in your GitHub repository, go to your repository page, navigate to the "Settings" tab, and then select "Secrets" from the left menu. Add a secret named DOCKERHUB_USERNAME with your Docker Hub username, and another secret named DOCKERHUB_PASSWORD with your Docker Hub password.
 
 ## Licensed to Code
 
