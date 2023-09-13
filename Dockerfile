@@ -1,6 +1,9 @@
 # Use a base Python image
 FROM python:3.11
 
+LABEL maintainer=“tom_halpin@hotmail.com”
+LABEL description="Hello world sample application for Python template GitHub repository."
+
 # Set the working directory inside the container
 WORKDIR /app
 
