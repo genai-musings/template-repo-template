@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.6.1] - 2023-10-15
 
 - [ADDED] Ensured docker image pushed to Docker Hub before README.md
+- [CHANGED] Codeowners and Dockerfile maintainers
 
 ## [1.6.0] - 2023-09-13
 
