@@ -40,7 +40,7 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 
 - ```.github/workflows/md-links.yml```: GitHub Actions workflow for Markdown link validation.
 
-- ```.github/workflows/safety.yml```: GitHub Actions workflow for checking Python dependencies for known security vulnerabilities using the Saftey tool.
+- ```.github/workflows/safety.yml```: GitHub Actions workflow for checking Python dependencies for known security vulnerabilities using the Safety tool.
 
 - ```.github/workflows/spellcheck.yml```: GitHub Actions workflow for spell checking Markdown.
 

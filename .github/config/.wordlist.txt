@@ -29,7 +29,6 @@ Python
 reponame
 Readme
 README
-Safety
 spellingcheck
 superlinter
 TODO
