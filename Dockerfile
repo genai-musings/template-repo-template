@@ -7,6 +7,12 @@ LABEL description="Hello world sample application for Python template GitHub rep
 # Set the working directory inside the container
 WORKDIR /app
 
+# Fix for DAST error reported by Trivy
+RUN apt-get update && \
+    apt-get install -y libpq-dev libpq5 libaom3 && \
+    apt-get install --only-upgrade -y libpq-dev libpq5 libaom3 linux-libc-dev && \
+    apt-get clean
+
 # Copy the requirements.txt file to the working directory
 COPY requirements.txt .
 
