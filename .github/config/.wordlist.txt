@@ -29,9 +29,11 @@ Python
 reponame
 Readme
 README
+Safety
 spellingcheck
 superlinter
 TODO
+Trivy
 URLs
 username
 yamllint
