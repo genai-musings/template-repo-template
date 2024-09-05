@@ -4,6 +4,7 @@ This is a template repository for creating new repositories with pre-configured 
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 <!--[![Bandit](https://github.com/genai-musings/template-repo-template/actions/workflows/bandit.yml/badge.svg)](https://github.com/genai-musings/template-repo-template/actions/new?category=security)-->
+[![Safety Check](https://github.com/genai-musings/template-repo-template/actions/workflows/safety.yml/badge.svg)](https://github.com/genai-musings/template-repo-template/actions/workflows/safety.yml)
 [![Super-Linter](https://github.com/genai-musings/template-repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![CodeQL](https://github.com/genai-musings/template-repo-template/workflows/CodeQL/badge.svg?branch=main)
 [![Markdown Links Check](https://github.com/genai-musings/template-repo-template/actions/workflows/md-links.yml/badge.svg)](https://github.com/gaurav-nelson/github-action-markdown-link-check)
@@ -38,6 +39,8 @@ It includes bug and feature issue templates, a pull request (PR) template, CodeQ
 - ```.github/workflows/linter.yml```: GitHub Actions workflow for YML & Markdown validation.
 
 - ```.github/workflows/md-links.yml```: GitHub Actions workflow for Markdown link validation.
+
+- ```.github/workflows/safety.yml```: GitHub Actions workflow for checking Python dependencies for known security vulnerabilities using the Saftey tool.
 
 - ```.github/workflows/spellcheck.yml```: GitHub Actions workflow for spell checking Markdown.
 
